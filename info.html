@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Informacje – Santorini</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Informacje o Santorini</h1>
+    <nav>
+        <a href="index.html">Strona główna</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="info.html">Informacje</a>
+    </nav>
+</header>
+
+<section class="content">
+
+    <h2>📍 Lokalizacja</h2>
+    <p>
+        Santorini to grecka wyspa położona na Morzu Egejskim, około 200 km
+        na południowy wschód od kontynentalnej Grecji. Należy do archipelagu Cyklad.
+        Wyspa powstała w wyniku jednej z największych erupcji wulkanicznych
+        w historii świata.
+    </p>
+
+    <h2>🌋 Historia i ciekawostki</h2>
+    <p>
+        Około 1600 roku p.n.e. doszło tu do potężnej erupcji wulkanu,
+        która ukształtowała charakterystyczną kalderę – czyli zatopiony
+        krater wulkanu. Niektórzy historycy uważają, że wydarzenie to
+        mogło przyczynić się do upadku cywilizacji minojskiej,
+        a nawet być inspiracją dla legendy o Atlantydzie.
+    </p>
+
+    <p>
+        Charakterystyczne białe domy z niebieskimi dachami budowano tak,
+        aby odbijały promienie słoneczne i chroniły przed upałem.
+        Dziś są one symbolem całej Grecji i jednym z najczęściej
+        fotografowanych widoków w Europie.
+    </p>
+
+    <h2>🏖 Atrakcje turystyczne</h2>
+    <ul>
+        <li>Oia – słynne zachody słońca</li>
+        <li>Fira – stolica wyspy</li>
+        <li>Czerwona Plaża (Red Beach)</li>
+        <li>Rejs wokół kaldery</li>
+        <li>Starożytne ruiny Akrotiri</li>
+    </ul>
+
+    <h2>🧠 Quiz – Czy znasz Santorini?</h2>
+
+<div id="quiz">
+
+    <form id="quizForm">
+
+        <!-- Pytanie 1 -->
+        <p>1. W jakim kraju leży Santorini?</p>
+        <label>
+            <input type="radio" name="q1" value="1">
+            Grecja
+        </label><br>
+        <label>
+            <input type="radio" name="q1" value="0">
+            Włochy
+        </label>
+
+        <!-- Pytanie 2 -->
+        <p>2. Co ukształtowało wyspę?</p>
+        <label>
+            <input type="radio" name="q2" value="1">
+            Erupcja wulkanu
+        </label><br>
+        <label>
+            <input type="radio" name="q2" value="0">
+            Trzęsienie ziemi
+        </label>
+
+        <!-- Pytanie 3 -->
+        <p>3. Z czego słynie Santorini?</p>
+        <label>
+            <input type="radio" name="q3" value="1">
+            Zachody słońca
+        </label><br>
+        <label>
+            <input type="radio" name="q3" value="0">
+            Drapacze chmur
+        </label>
+
+        <br><br>
+        <button type="button" onclick="calculateScore()">Sprawdź wynik</button>
+
+    </form>
+
+    <p id="score"></p>
+
+</div>
+
+</section>
+
+<footer>
+    <p>Informacje turystyczne – Santorini</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
