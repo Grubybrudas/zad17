@@ -1,4 +1,4 @@
-// ===== SLIDER =====
+
 let slides = [
     "zdjecia/1.jpg",
     "zdjecia/2.jpg",
@@ -27,7 +27,7 @@ function prevSlide() {
     showSlide();
 }
 
-// ===== CIEKAWOSTKI =====
+
 let facts = [
     "Santorini powstało w wyniku erupcji wulkanu.",
     "Wyspa ma charakterystyczne białe domy z niebieskimi dachami.",
@@ -39,7 +39,7 @@ function showFact() {
     document.getElementById("fact").innerText = facts[random];
 }
 
-// ===== QUIZ =====
+
 let score = 0;
 
 function calculateScore() {
@@ -47,22 +47,20 @@ function calculateScore() {
     let form = document.forms["quizForm"];
     let score = 0;
 
-    // Sprawdzenie czy wszystkie pytania mają odpowiedź
+
     if (!form.q1.value || !form.q2.value || !form.q3.value) {
         alert("Odpowiedz na wszystkie pytania!");
         return;
     }
 
-    // Zliczanie punktów
     score += parseInt(form.q1.value);
     score += parseInt(form.q2.value);
     score += parseInt(form.q3.value);
 
-    // Wyświetlenie wyniku
     document.getElementById("score").innerText =
         "Twój wynik: " + score + " / 3 punktów";
 
-    // Zablokowanie ponownej zmiany odpowiedzi
+
     let inputs = document.querySelectorAll("#quiz input");
     inputs.forEach(input => input.disabled = true);
 }
