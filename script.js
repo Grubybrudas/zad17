@@ -1,8 +1,8 @@
 
 let slides = [
-    "zdjecia/1.jpg",
-    "zdjecia/2.jpg",
-    "zdjecia/3.jpg"
+    "1.jpg",
+    "2.jpg",
+    "3.jpg"
 ];
 
 let currentSlide = 0;
