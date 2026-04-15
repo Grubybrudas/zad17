@@ -1,8 +1,8 @@
 
 let slides = [
-    "1.jpg",
-    "2.jpg",
-    "3.jpg"
+    "https://images.pexels.com/photos/164435/pexels-photo-164435.jpeg",
+    "https://images.pexels.com/photos/10611809/pexels-photo-10611809.jpeg",
+    "https://images.pexels.com/photos/34822453/pexels-photo-34822453.jpeg"
 ];
 
 let currentSlide = 0;
